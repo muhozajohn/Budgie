@@ -100,7 +100,7 @@ nav {
 }
 .searcWaraper input[type="text"] {
   border: none;
-  flex: 1 1%;
+  width: 80%;
   border: none;
   outline: none;
   padding: 7px;
@@ -233,9 +233,9 @@ nav {
     padding: 0 0 0 -1rem;
   }
   .searcWaraper input[type="text"] {
-    flex:0 0%;
+    width: 70%;
   }
   .searcWaraper input[type="button"] {
-    margin-right: 0.2rem;
+    margin-right: 0.3rem;
   }
 }
