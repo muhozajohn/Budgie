@@ -1,0 +1,83 @@
+#About{
+    margin-top: 8rem;
+}
+.About-waraper{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 3rem;
+}
+.about-card-left img{
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+.about-card-left{
+    position: relative;
+}
+.left-card{
+    background-color: var(--orange);
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    top: 70%;
+    right: -1rem;
+    position: absolute;
+    z-index: -1;
+}
+.about-card-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* background-color: aqua; */
+}
+.about-card-right h3{
+    font-style:normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.about-card-right h2{
+    font-style: bold;
+    font-size: 30px;
+}
+.about-card-right span{
+    color: var(--orange);
+}
+.about-card-right p{
+    font-size: 15px;
+}
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--orange);
+    width: 300px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+
+/* ======================================= Media queries for Tablet Mode ===================================== */
+@media screen AND (max-width: 1280px) {
+  .container {
+    width: var(--md-screen);
+    margin: 0 auto;
+  }
+
+.About-waraper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+ 
+}
+/* ======================================= Media queries for Phone Mode ===================================== */
+@media screen AND (max-width: 600px) {
+  .container {
+    width: var(--sm-screen);
+    margin: 0 auto;
+  }
+
+.About-waraper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+ 
+}

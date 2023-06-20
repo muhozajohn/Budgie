@@ -125,50 +125,111 @@ nav {
   justify-content: space-between;
   gap: 1rem;
 }
-.rating-card{
+.rating-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-wraper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.main-card {
+  margin-top: -8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--white);
+  box-shadow: 0px 2px 1px var(--white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+.main-card:nth-child(2) {
+  background-color: var(--orange);
+}
+.main-card:nth-child(2) span {
+  color: var(--black);
+}
+.main-detail-waraper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main-detail-waraper p {
+  font-size: 12px;
+}
+.main-detail-waraper h2 {
+  font-size: 20px;
+}
+.main-card-icon span {
+  color: var(--orange);
+  font-size: 3rem;
+}
+.icon {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+/* ======================================= Media queries for Tablet Mode ===================================== */
+@media screen AND (max-width: 1280px) {
+  .container {
+    width: var(--md-screen);
+    margin: 0 auto;
+  }
+
+  .navBar ul {
+    display: none;
+  }
+  .main-wraper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .main-card:nth-child(3) {
+    margin-top: 1rem;
+  }
+  .rating-review {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-}
-.main-wraper{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
-}
-.main-card{
-    margin-top: -8rem;
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
-    border-radius: 0.5rem;
-    background: var(--white);
-    box-shadow: 0px 2px 1px  var(--white);
-    text-align: center;
-    padding: 1.5rem 1rem;
+  }
+  .searcWaraper {
+    width: 60%;
+  }
 }
-.main-card:nth-child(2){
-    background-color:var(--orange);
-}
-.main-card:nth-child(2) span{
-    color: var(--black);
-}
-.main-detail-waraper{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-.main-detail-waraper p{
-    font-size: 12px;
-}
-.main-detail-waraper h2{
-    font-size: 20px;
-}
-.main-card-icon span{
-    color: var(--orange);
-    font-size: 3rem;
-}
-.icon{
-    border-radius: 50%;
-    aspect-ratio: 1/1;
+/* ======================================= Media queries for Tablet Mode ===================================== */
+@media screen AND (max-width: 600px) {
+  .container {
+    width: var(--sm-screen);
+    margin: 0 auto;
+  }
 
+  .navBar ul {
+    display: none;
+  }
+  .main-wraper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  .main-card:nth-child(3) {
+    margin-top: 1rem;
+  }
+  .main-card:nth-child(2) {
+    margin-top: 1rem;
+  }
+  .rating-review {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .searcWaraper {
+    width: 100%;
+     padding: 0 0 0 2rem;
+  }
 }

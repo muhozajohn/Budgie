@@ -16,16 +16,16 @@ const Nav = () => {
             <div className="navBar">
               <ul>
                 <li>
-                  <Link to="/"> Home </Link>{" "}
+                  <Link to="/"> Home </Link>
                 </li>
                 <li>
-                  <Link to="/Finance"> Finance Eduction </Link>{" "}
+                  <Link to="/Finance"> Finance Eduction </Link>
                 </li>
                 <li>
-                  <Link to="/Mentorship"> Mentorship </Link>{" "}
+                  <Link to="/Mentorship"> Mentorship </Link>
                 </li>
                 <li>
-                  <Link to="/Budgeting"> Budgeting </Link>{" "}
+                  <Link to="/Budgeting"> Budgeting </Link>
                 </li>
               </ul>
             </div>

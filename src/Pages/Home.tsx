@@ -4,6 +4,7 @@ import { HiStatusOnline } from "react-icons/hi";
 import { FaElementor } from "react-icons/fa";
 import { TbPigMoney } from "react-icons/tb";
 import { GiCash } from "react-icons/gi";
+import About from "../sections/About";
 const Home = () => {
   return (
     <>
@@ -103,6 +104,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <About />
     </>
   );
 };
