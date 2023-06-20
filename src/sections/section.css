@@ -79,5 +79,7 @@
     grid-template-columns: 1fr;
     gap: 3rem;
 }
- 
+ .btn{
+    width: 100%;
+}
 }

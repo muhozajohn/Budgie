@@ -10,6 +10,7 @@ nav {
   width: 100%;
   background-color: var(--bg-color);
   top: 0;
+  z-index: 100;
 }
 .Nav .logo {
   height: 20vh;
@@ -200,6 +201,9 @@ nav {
   .searcWaraper {
     width: 60%;
   }
+  .login {
+    display: none;
+  }
 }
 /* ======================================= Media queries for Tablet Mode ===================================== */
 @media screen AND (max-width: 600px) {
@@ -209,6 +213,9 @@ nav {
   }
 
   .navBar ul {
+    display: none;
+  }
+  .login {
     display: none;
   }
   .main-wraper {
