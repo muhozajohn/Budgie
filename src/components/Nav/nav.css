@@ -230,6 +230,12 @@ nav {
   }
   .searcWaraper {
     width: 100%;
-     padding: 0 0 0 -6rem;
+    padding: 0 0 0 -1rem;
+  }
+  .searcWaraper input[type="text"] {
+    flex:0 0%;
+  }
+  .searcWaraper input[type="button"] {
+    margin-right: 0.2rem;
   }
 }
