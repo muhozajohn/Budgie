@@ -24,6 +24,9 @@ img{
   display: block;
   object-fit: cover !important;
 }
+html{
+  scroll-behavior: smooth;
+}
 .container {
   width: var(--lg-screen);
   margin: 0 auto;
