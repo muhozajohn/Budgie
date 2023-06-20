@@ -1,0 +1,50 @@
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  /* background-color: aqua; */
+}
+.Nav .logo{
+    height: 20vh;
+    object-fit: cover;
+}
+.navWraper{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navBar ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.searchLogin-wraper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.search{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.search span{
+    color: var(--orange);
+}
+.login ul{
+    display: flex;
+    align-items: center; gap: 0.5rem;
+    background: var(--orange);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    list-style: none;
+    color: var(--white);
+    position: relative;
+}
+.login ul span{
+    position: absolute;
+    margin-top: 2rem;
+}

@@ -1,7 +1,11 @@
+import { BrowserRouter } from "react-router-dom"
+import Nav from "./components/Nav/Nav"
 
 const App = () => {
   return (
-    <div>App</div>
+   <BrowserRouter>
+   <Nav />
+   </BrowserRouter>
   )
 }
 
