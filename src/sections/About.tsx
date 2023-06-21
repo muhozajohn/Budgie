@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-card-right">
           <h3>About us</h3>
           <h2>
-            Learn A<span>nytime</span> And <br /> Anywhere Now
+            Learn A<span>nytime</span> And <br /> Any where Now
           </h2>
           <p>
             You can access course materials and lectures at any time, which is

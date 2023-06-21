@@ -246,3 +246,39 @@ nav {
     margin-right: 0.3rem;
   }
 }
+
+@media screen AND (max-width: 320px) {
+  .Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    /* background-color: aqua; */
+  }
+  .Nav .logo {
+    height: 16vh;
+    object-fit: cover;
+  }
+  .header {
+    margin-top: 3rem;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-top: 3rem; */
+    color: var(--white);
+    padding: 1rem 0;
+  }
+  .online {
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
+  .main-card {
+    margin-top: -5rem;
+  }
+  .about-card-right h2 {
+    font-size: 12px;
+    /* color: aqua; */
+  }
+}
