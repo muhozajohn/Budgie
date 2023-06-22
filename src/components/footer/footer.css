@@ -1,0 +1,153 @@
+#Footer {
+  margin-top: 6rem;
+  background: var(--footer);
+  padding: 3rem 0rem;
+}
+.footer-header,
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+.footer-wraper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-img {
+  flex-basis: 10%;
+}
+.hidden{
+    display: none;
+}
+.footer-header h2 {
+  font-size: 1rem;
+  color: var(--white);
+}
+.footer-loc-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-loc-card span {
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.footer-location p {
+  font-size: 10px;
+  color: var(--bg-color);
+}
+.footer-location {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-searcWaraper {
+  background-color: var(--white);
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.footer-searcWaraper input[type="text"] {
+  height: 30px;
+  padding: 7px;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+.footer-arrow {
+  width: 60px;
+  height: 30px;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerIicon {
+  font-size: 18px;
+}
+.Footer-Icons{
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+.Footer-Icon{
+    margin-left: -0.9rem;
+}
+.FooterIcons {
+  font-size: 28px;
+}
+.footer-copyright{
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.umusa-margin{
+    margin-left: -5rem;
+}
+.umusa-margini{
+    margin-left: -8rem;
+}
+.footer-pay-card{
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    color: var(--orange);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.footer-pay-card span{
+    overflow: hidden;
+}
+
+/* ======================================= Media queries for Tablet Mode ===================================== */
+@media screen AND (max-width: 1280px) {
+  .container {
+    width: var(--md-screen);
+    margin: 0 auto;
+  }
+/* .footer-header {
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ background-color: aqua;
+} */
+}
+/* ======================================= Media queries for Phone Mode ===================================== */
+@media screen AND (max-width: 600px) {
+  .container {
+    width: var(--sm-screen);
+    margin: 0 auto;
+  }
+.footer-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-header h2{
+    display: none;
+}
+.footer-body {
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ /* align-self: flex-end; */
+ gap: 2rem;
+}
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+}
+.hidden{
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+}

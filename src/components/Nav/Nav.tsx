@@ -7,7 +7,7 @@ const Nav = () => {
     <>
       <nav>
         <div className="container Nav">
-          <div className="logo">
+          <div className="logo Footer-Icon">
             <Link to="/">
               <img src={Logo} alt="Budgie Logo" />
             </Link>

@@ -6,6 +6,7 @@ import { TbPigMoney } from "react-icons/tb";
 import { GiCash } from "react-icons/gi";
 import About from "../sections/About";
 import Courses from "../sections/Courses";
+import Footer from "../components/footer/Footer";
 const Home = () => {
   return (
     <>
@@ -24,7 +25,7 @@ const Home = () => {
             managing their finances effectively.
           </p>
           <div className="searcWaraper">
-            <input type="text" />
+            <input type="text" placeholder="Search Courses" />
             <input type="button" value="Search Courses" />
           </div>
           <div className="rating-review">
@@ -107,6 +108,7 @@ const Home = () => {
       </div>
       <About />
       <Courses />
+      <Footer />
     </>
   );
 };

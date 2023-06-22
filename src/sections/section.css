@@ -226,6 +226,12 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .courses-button ul li {
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
 }
 
 /* ===================================== Testimoniols ================================ */

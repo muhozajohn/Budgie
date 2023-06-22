@@ -95,7 +95,7 @@ const Testimonials = () => {
             <h2>For You Better Course</h2>
             <div className="brand-contact">
               <button className="btns">Get Started Now</button>
-              <p>+250 785 161 508</p>
+              <p>+250 781 366 463</p>
             </div>
           </div>
         </div>
