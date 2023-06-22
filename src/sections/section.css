@@ -53,7 +53,7 @@
   background-color: transparent;
   transition: all 400ms ease-in-out;
 }
-.btn:hover{
+.btn:hover {
   background-color: var(--orange);
 }
 /* ======================================= Media queries for Tablet Mode ===================================== */
@@ -224,18 +224,107 @@
   }
   .courses-button ul {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-
 /* ===================================== Testimoniols ================================ */
-#Testmoniols{
+#Testmoniols {
   margin-top: 6rem;
 }
-#Testmoniols span{
+#Testmoniols span {
   color: var(--orange);
 }
-#Testmoniols h2,h4{
+#Testmoniols h2,
+h4 {
   text-align: center;
+}
+.testimoniols-wraper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* margin-top: 3rem; */
+}
+.test-card{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.test-rotate{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  transform: rotate(60deg);
+  bottom: -0.4rem;
+  margin-left: 2.5rem;
+  z-index: -1;
+  box-shadow: 0px 1px 2px var(--orange);
+}
+.test-card-header-wraper{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.test-card-img-wraper{
+  flex-basis: 15%;
+  height: 6vh;
+}
+.test-card-img-wraper img{
+  border-radius: 0.5rem;
+}
+.test-header-desc{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-align: left;
+  gap: -00.2rem;
+}
+.test-header-desc small{
+  font-size: 12px;
+  color: var(--orange);
+}
+.test-date{
+  display: flex;
+  gap: 0.5rem;
+  align-self: flex-end;
+  align-items: center;
+  /* flex: auto; */
+}
+.test-date span{
+  font-size: 1.5rem;
+  margin-bottom: -0.2rem;
+}
+
+
+/* ======================================= Media queries for Tablet Mode ===================================== */
+@media screen AND (max-width: 1280px) {
+  .container {
+    width: var(--md-screen);
+    margin: 0 auto;
+  }
+.testimoniols-wraper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  /* margin-top: 3rem; */
+}
+}
+/* ======================================= Media queries for Phone Mode ===================================== */
+@media screen AND (max-width: 600px) {
+  .container {
+    width: var(--sm-screen);
+    margin: 0 auto;
+  }
+.testimoniols-wraper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  /* margin-top: 3rem; */
+}
 }
