@@ -245,7 +245,7 @@ h4 {
   gap: 2rem;
   /* margin-top: 3rem; */
 }
-.test-card{
+.test-card {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -255,7 +255,7 @@ h4 {
   padding: 1rem 2rem;
   position: relative;
 }
-.test-rotate{
+.test-rotate {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -266,41 +266,70 @@ h4 {
   z-index: -1;
   box-shadow: 0px 1px 2px var(--orange);
 }
-.test-card-header-wraper{
+.test-card-header-wraper {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.test-card-img-wraper{
+.test-card-img-wraper {
   flex-basis: 15%;
   height: 6vh;
 }
-.test-card-img-wraper img{
+.test-card-img-wraper img {
   border-radius: 0.5rem;
 }
-.test-header-desc{
+.test-header-desc {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   text-align: left;
   gap: -00.2rem;
 }
-.test-header-desc small{
+.test-header-desc small {
   font-size: 12px;
   color: var(--orange);
 }
-.test-date{
+.test-date {
   display: flex;
   gap: 0.5rem;
   align-self: flex-end;
   align-items: center;
   /* flex: auto; */
 }
-.test-date span{
+.test-date span {
   font-size: 1.5rem;
   margin-bottom: -0.2rem;
 }
-
+#brand {
+  margin-top: 3rem;
+}
+.brand {
+  background-color: var(--orange);
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
+  color: var(--white);
+}
+.brand-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-contact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.brand-contact:nth-child(2) {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.btns {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
 
 /* ======================================= Media queries for Tablet Mode ===================================== */
 @media screen AND (max-width: 1280px) {
@@ -308,12 +337,12 @@ h4 {
     width: var(--md-screen);
     margin: 0 auto;
   }
-.testimoniols-wraper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  /* margin-top: 3rem; */
-}
+  .testimoniols-wraper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* margin-top: 3rem; */
+  }
 }
 /* ======================================= Media queries for Phone Mode ===================================== */
 @media screen AND (max-width: 600px) {
@@ -321,10 +350,26 @@ h4 {
     width: var(--sm-screen);
     margin: 0 auto;
   }
-.testimoniols-wraper {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
-  /* margin-top: 3rem; */
-}
+  .testimoniols-wraper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    /* margin-top: 3rem; */
+  }
+  .brand-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: first baseline;
+  }
+  .brand-contact:nth-child(2) {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .brand-contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 }
