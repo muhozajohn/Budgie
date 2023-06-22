@@ -35,9 +35,8 @@ const Footer = () => {
         </div>
         <div className="footer-body">
           <div className="footer-location">
-              <h2 className="hidden">Location</h2>
+            <h2 className="hiddenl">Location</h2>
             <div className="footer-loc-card">
-              
               <span>
                 {" "}
                 <MdLocationOn className="Footer-Icons" />{" "}
@@ -75,6 +74,7 @@ const Footer = () => {
             <p>Mentorship</p>
           </div>
           <div className="footer-location">
+            <h2 className="getin">Get In Touch</h2>
             <p>We don’t Send Spam So Don’t Worry</p>
             <div className="footer-searcWaraper">
               <input type="text" placeholder="Email" />
@@ -82,14 +82,30 @@ const Footer = () => {
                 <FaLongArrowAltRight className="footerIicon" />
               </button>
             </div>
-                        {/* <h2>Get In Touch</h2> */}
-                      <div className="footer-pay-card">
-            <span> <FaInstagram /> </span>
-            <span> <FaLinkedin /> </span>
-            <span> <FaTwitter /> </span>
-            <span> <FaFacebookF /> </span>
-            <span> <FaYoutube /> </span>
-          </div>
+            <div className="footer-pay">
+              <div className="footer-pay-card">
+                <span>
+                  {" "}
+                  <FaInstagram />{" "}
+                </span>
+                <span>
+                  {" "}
+                  <FaLinkedin />{" "}
+                </span>
+                <span>
+                  {" "}
+                  <FaTwitter />{" "}
+                </span>
+                <span>
+                  {" "}
+                  <FaFacebookF />{" "}
+                </span>
+                <span>
+                  {" "}
+                  <FaYoutube />{" "}
+                </span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="footer-hr">
@@ -98,10 +114,22 @@ const Footer = () => {
         <div className="footer-copyright">
           <p>Copyright 2023 Budgie All Right Reserved</p>
           <div className="footer-pay-card">
-            <span> <FaCcVisa /> </span>
-            <span> <FaCcApplePay /> </span>
-            <span> <FaCcMastercard /> </span>
-            <span> <FaCcPaypal /> </span>
+            <span>
+              {" "}
+              <FaCcVisa />{" "}
+            </span>
+            <span>
+              {" "}
+              <FaCcApplePay />{" "}
+            </span>
+            <span>
+              {" "}
+              <FaCcMastercard />{" "}
+            </span>
+            <span>
+              {" "}
+              <FaCcPaypal />{" "}
+            </span>
           </div>
         </div>
       </div>
