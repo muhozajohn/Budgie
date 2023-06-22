@@ -245,6 +245,10 @@ nav {
   .searcWaraper input[type="button"] {
     margin-right: 0.3rem;
   }
+  .Nav .logo {
+    height: 14vh;
+    object-fit: cover;
+  }
 }
 
 @media screen AND (max-width: 320px) {
