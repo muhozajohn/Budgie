@@ -19,7 +19,6 @@ nav {
 .Nav .logo img {
   height: 90%;
   object-fit: cover;
-  /* background-color: red; */
 }
 .navWraper {
   display: flex;

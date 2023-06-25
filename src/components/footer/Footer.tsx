@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="container footer-wraper">
         <div className="footer-header">
           <div className="footer-img">
-            <img src={logo} alt="" className="Footer-Icon" />
+            <img src={logo} alt="" className="Footer-Icon footer-size" />
           </div>
           <div>
             <h2 className="umusa-margin">About</h2>
