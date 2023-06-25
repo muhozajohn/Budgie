@@ -26,34 +26,6 @@ const About = () => {
             individuals' lives, and we aim to empower our users with the
             understanding of why financial literacy matters.
           </p>
-          {/* <p>
-            To support this objective, Budgie offers a range of valuable
-            resources. We provide a monthly budget template that enables users
-            to track their expenses, set financial goals, and develop effective
-            budgeting strategies. Our user-friendly template simplifies the
-            budgeting process, helping individuals gain control over their
-            finances and make informed decisions.
-          </p>
-          <p>
-            In addition to the budgeting tool, Budgie places great emphasis on
-            personalized mentorship. We believe that having a mentor who can
-            guide and provide insights based on their own financial experiences
-            can greatly enhance the learning process. Our mentorship program
-            connects students with knowledgeable and experienced professionals
-            who can offer personalized advice, answer questions, and provide
-            valuable tips and tricks for financial success.
-          </p>
-          <p>
-            At Budgie, we understand that financial education is a lifelong
-            journey, and we are committed to supporting individuals at every
-            stage. Whether you're a student just starting to explore the world
-            of personal finance or an experienced professional looking to refine
-            your financial skills, Budgie is here to empower you with the
-            knowledge and resources you need to thrive. Join us on our mission
-            to foster financial literacy, take control of your financial future,
-            and unlock a world of possibilities. Budgie is your partner in
-            financial education and mentorship.
-          </p> */}
           <button className="btn">Read more about us</button>
         </div>
       </div>

@@ -13,8 +13,13 @@ nav {
   z-index: 100;
 }
 .Nav .logo {
-  height: 20vh;
+  height: 100%;
   object-fit: cover;
+}
+.Nav .logo img {
+  height: 90%;
+  object-fit: cover;
+  /* background-color: red; */
 }
 .navWraper {
   display: flex;
