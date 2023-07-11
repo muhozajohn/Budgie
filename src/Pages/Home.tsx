@@ -6,7 +6,6 @@ import { TbPigMoney } from "react-icons/tb";
 import { GiCash } from "react-icons/gi";
 import About from "../sections/About";
 import Courses from "../sections/Courses";
-import Footer from "../components/footer/Footer";
 const Home = () => {
   return (
     <>
@@ -108,7 +107,6 @@ const Home = () => {
       </div>
       <About />
       <Courses />
-      <Footer />
     </>
   );
 };
