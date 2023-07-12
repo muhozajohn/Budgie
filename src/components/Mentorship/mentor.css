@@ -18,7 +18,7 @@ header {
   border-radius: 1rem;
   margin-top: 5rem;
   right: 0;
-  margin-top: 10% !important;
+  margin-top: 7rem !important;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,6 @@ header {
   background-color: var(--white);
   border-radius: 0.5rem;
   height: 300px;
-  /* padding: 1rem 2rem; */
 }
 .dimage-container {
   height: 100%;
@@ -105,7 +104,6 @@ header {
   height: 100%;
 }
 .mentor-brand .mentor-search {
-  /* background-color: transparent; */
   width: 30vw;
 }
 .chua {
@@ -114,5 +112,64 @@ header {
   gap: 1.3rem;
 }
 
-@media screen AND (max-width: 1) {
+@media screen AND (max-width: 1024px) {
+  .container{
+    width: var(--md-screen);
+    margin: 0 auto;
+  }
+  header{
+    height: 70vh;
+  }
+  .mentor-card{
+    width: 100%;
+  }
+  .mentor-search{
+    width: 80%;
+  }
+  .discover-card-wraper{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .mentor-brand{
+   flex-direction: column;
+   padding: 4rem 0;
+  }
+  .mentor-brand .brand-img{
+    display: none;
+  }
+  .mentor-brand .mentor-search {
+  width: 60vw;
+}
+}
+@media screen AND (min-width: 300px)  AND (max-width: 600px){
+  .container{
+    width: var(--sm-screen);
+    margin: 0 auto;
+  }
+  header{
+    height: 70vh;
+  }
+  .mentor-card{
+    width: 100%;
+    padding: 1.5rem 2rem;
+  }
+  .mentor-search{
+    width: 100%;
+  }
+  .discover-card-wraper{
+    grid-template-columns: repeat(1,1fr);
+    gap: 4rem;
+  }
+  .mentor-brand{
+   flex-direction: column;
+   padding: 3rem 2rem;
+  }
+  .mentor-brand .brand-img{
+    display: none;
+  }
+  .mentor-brand .mentor-search {
+  width: 100%;
+}
+.discover-header h3{
+  font-size: 13px;
+}
 }
