@@ -50,7 +50,7 @@ const Mentor = () => {
                 <img src={Stephine} alt="" />
               </div>
               <div className="dDetails">
-                <h3>Sandra</h3>
+                <h3>Sthephine</h3>
                 <p>Senior manager - Solutions Engineering</p>
               </div>
             </div>
