@@ -18,7 +18,7 @@ header {
   border-radius: 1rem;
   margin-top: 5rem;
   right: 0;
- top: 0;
+  margin-top: 10% !important;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -101,15 +101,18 @@ header {
 .brandi {
   margin-top: 8rem;
 }
-.brand-img{
+.brand-img {
   height: 100%;
 }
-.mentor-brand .mentor-search{
+.mentor-brand .mentor-search {
   /* background-color: transparent; */
   width: 30vw;
-} 
-.chua{
+}
+.chua {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
+}
+
+@media screen AND (max-width: 1) {
 }
