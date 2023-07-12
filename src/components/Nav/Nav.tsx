@@ -30,6 +30,10 @@ const Nav = () => {
                 <li>
                   <Link to="/Budgeting" onClick={()=>SetDisplayMenu(prev => !prev)}> Budgeting </Link>
                 </li>
+                <li className="hid">
+                  <Link to="/Budgeting" onClick={()=>SetDisplayMenu(prev => !prev)}> Profile </Link>
+                </li>
+                
               </ul>
             </div>
             <div className="searchLogin-wraper">
@@ -43,7 +47,7 @@ const Nav = () => {
                   <span>
                     <FaUserCircle />
                   </span>
-                  <li>Register/Login</li>
+                  <li>Profile</li>
                 </ul>
               </div>
             </div>
