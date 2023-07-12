@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
 }
 .mentor-search input[type="text"] {
-  height: 50px;
+  height: 40px;
   width: 80%;
   border: none;
   outline: none;
