@@ -42,9 +42,11 @@ nav {
 }
 .search {
   background-color: white;
-  padding: 0.5rem 1rem;
+  padding: 5px 14px;
   border-radius: 0.5rem;
   cursor: pointer;
+  height: 50px;
+  font-size: 1.7rem;
 }
 .search span {
   color: var(--orange);
@@ -55,15 +57,29 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: var(--orange);
-  padding: 0.3rem 0.7rem;
-  border-radius: 0.5rem;
+  cursor: pointer;
   list-style: none;
   color: var(--white);
+  background: var(--orange);
+  padding: 5px 14px;
+  border-radius: 0.5rem;
   cursor: pointer;
+  height: 50px;
+  font-size: 1.7rem;
 }
 .login ul span {
   margin-top: 5px;
+}
+.clikMe {
+  display: none;
+  border: none;
+  padding: 5px 14px;
+  font-size: 2rem;
+  background-color: var(--white);
+  height: 50px;
+  color: var(--orange);
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 /* ========================== header ========================= */
@@ -183,9 +199,70 @@ nav {
     width: var(--md-screen);
     margin: 0 auto;
   }
-
   .navBar ul {
+    top: 100%;
+    right: 0rem;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    perspective: 500px;
+  }
+  .clikMe {
+    display: block;
+  }
+  .navBar li {
+    width: 100%;
+    height: 4rem;
+    box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    animation: navAnimation 500ms ease-in-out forwards;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  .navBar li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+  .navBar li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  .navBar li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+  .navBar li:nth-child(5) {
+    animation-delay: 800ms;
+  }
+  .navBar li:nth-child(6) {
+    animation-delay: 1s;
+  }
+  .navBar li:nth-child(7) {
+    animation-delay: 1s;
+  }
+  @keyframes navAnimation {
+    to {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  .navBar li a {
+    background: var(--bg-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem 1rem 3rem;
+  }
+  .active-nav,
+  .active-nav::after {
     display: none;
+  }
+  .display-nav {
+    display: flex;
+  }
+  .hide-nav {
+    display: none !important;
   }
   .main-wraper {
     display: grid;
@@ -216,8 +293,60 @@ nav {
     margin: 0 auto;
   }
 
-  .navBar ul {
+  .clikMe {
+    display: block;
+  }
+  .navBar li {
+    width: 100%;
+    height: 4rem;
+    box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    animation: navAnimation 500ms ease-in-out forwards;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  .navBar li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+  .navBar li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  .navBar li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+  .navBar li:nth-child(5) {
+    animation-delay: 800ms;
+  }
+  .navBar li:nth-child(6) {
+    animation-delay: 1s;
+  }
+  .navBar li:nth-child(7) {
+    animation-delay: 1s;
+  }
+  @keyframes navAnimation {
+    to {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  .navBar li a {
+    background: var(--bg-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem 1rem 3rem;
+  }
+  .active-nav,
+  .active-nav::after {
     display: none;
+  }
+  .display-nav {
+    display: flex;
+  }
+  .hide-nav {
+    display: none !important;
   }
   .login {
     display: none;
@@ -288,5 +417,60 @@ nav {
   .about-card-right h2 {
     font-size: 12px;
     /* color: aqua; */
+  }
+  .clikMe {
+    display: block;
+  }
+  .navBar li {
+    width: 100%;
+    height: 4rem;
+    box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    animation: navAnimation 500ms ease-in-out forwards;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  .navBar li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+  .navBar li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  .navBar li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+  .navBar li:nth-child(5) {
+    animation-delay: 800ms;
+  }
+  .navBar li:nth-child(6) {
+    animation-delay: 1s;
+  }
+  .navBar li:nth-child(7) {
+    animation-delay: 1s;
+  }
+  @keyframes navAnimation {
+    to {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  .navBar li a {
+    background: var(--bg-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem 1rem 3rem;
+  }
+  .active-nav,
+  .active-nav::after {
+    display: none;
+  }
+  .display-nav {
+    display: flex;
+  }
+  .hide-nav {
+    display: none !important;
   }
 }

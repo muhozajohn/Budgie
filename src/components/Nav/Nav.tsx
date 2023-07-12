@@ -1,8 +1,11 @@
 import "./nav.css";
+import { useState } from "react";
 import Logo from "../../assets/logo1.png";
 import { Link } from "react-router-dom";
-import { FaUserCircle, FaSearch } from "react-icons/fa";
+import { FaUserCircle, FaSearch, FaBars, FaTimes } from "react-icons/fa";
+// import {HiOutlineBars3BottomRight} from "react-icons/hi"
 const Nav = () => {
+  const [DisplayMenu, SetDisplayMenu] = useState(false);
   return (
     <>
       <nav>
@@ -14,18 +17,18 @@ const Nav = () => {
           </div>
           <div className="navWraper">
             <div className="navBar">
-              <ul>
+              <ul className={`${DisplayMenu ? "display-nav" : "hide-nav"}`}>
                 <li>
-                  <Link to="/"> Home </Link>
+                  <Link to="/" onClick={()=>SetDisplayMenu(prev => !prev)}> Home </Link>
                 </li>
                 <li>
-                  <Link to="/"> Finance Eduction </Link>
+                  <Link to="/" onClick={()=>SetDisplayMenu(prev => !prev)}> Finance Eduction </Link>
                 </li>
                 <li>
-                  <Link to="/Mentorship"> Mentorship </Link>
+                  <Link to="/Mentorship" onClick={()=>SetDisplayMenu(prev => !prev)}> Mentorship </Link>
                 </li>
                 <li>
-                  <Link to="/Budgeting"> Budgeting </Link>
+                  <Link to="/Budgeting" onClick={()=>SetDisplayMenu(prev => !prev)}> Budgeting </Link>
                 </li>
               </ul>
             </div>
@@ -44,6 +47,12 @@ const Nav = () => {
                 </ul>
               </div>
             </div>
+            <button
+              className="clikMe"
+              onClick={() => SetDisplayMenu((prev) => !prev)}
+            >
+              {DisplayMenu ? <FaTimes /> : <FaBars />} 
+            </button>
           </div>
         </div>
       </nav>
